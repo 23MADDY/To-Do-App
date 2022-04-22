@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(121.4deg, rgba(122,192,233,1) 18.8%, rgba(4,161,255,1) 100.2%);
+    font-family: 'poppins', sans-serif;
+    height: 100vh;
+    margin-top: 200px;
+    /*display: flex;*/
+    font-size: 16px;
+    padding: 6px;
+    overflow: hidden;
+}
+
+.todo-app{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: #ffff;
+    width: 420px;
+    padding: 25px 30px;
+    border-radius: 7px;
+    box-shadow: 0px, 6px, 15px rgba(0,0,0,0.15);
+}
+
+.todo-app-title{
+    text-align: left;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1b1b1b;
+}
+
+.todo-app-form{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-app-form input{
+    width: 70%;
+    outline: none;
+    border: 1px solid #bfbfbfbf;
+    height: 40px;
+    border-radius: 4px;
+    padding: 0 10px;
+    color: #000;
+    font-family: 'ppoppins', sans-serif;
+}
+.todo-app-btn{
+    height: 40px;
+    border: 0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+    background: #09A2fe;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'ppoppins', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+} 
+.todo-app-btn:hover {
+    background: #0274bb;
+}
+
+.todo-app-divider{
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background: #79bfe9;
+    display: block;
+    margin: 10px 0px;
+    border-radius: 50px;
+
+}
+.todo-app-list{
+width: 100%;
+display: block;
+align-items: center;
+justify-content: center;
+max-height: 240px;
+overflow-x:hidden ;
+overflow-y: visible;
+overflow: auto;
+}
+
+
+.todo-app-item-list{
+    background: #ddf2ff;
+    display: flex;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    color: #1b1b1b;
+    
+
+}
+
+.todo-app-item-list p{
+    flex: 1;
+    margin-left: 10px;
+   
+}
+
+.todo-app-item-list span{
+align-items: flex-end;
+}
+
+.todo-app-item-list .close{
+    color: #ee3131;
+}
+.todo-app-item-list.completed{
+    background: #8a8a8a50;
+}
+
+.todo-app-item-list.completed p{
+    color: #757575;
+    text-decoration: line-through;
+}
+
+.message{
+display: flex;
+color: white;
+align-items: center;
+text-align: center;
+justify-content: center;
+padding-top: 250px;
+cursor: pointer;
+font-family: 'ppoppins', sans-serif;
+font-size: 14px;
+font-weight: bold;
+font-weight: 700;
+}
+
+.btn{
+    height: 40px;
+    border: 0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+    background: #09A2fe;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'ppoppins', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
