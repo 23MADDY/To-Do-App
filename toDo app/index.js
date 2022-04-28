@@ -7,7 +7,11 @@ const errorMessage = document.querySelector("#message");
 
 
 todoBtn.addEventListener("click", function addTodoList(event){
-// adding div under todo app list
+
+    if (todoInput.value === ""){
+        window.alert("please fill the form first")
+    }else {
+    // adding div under todo app list
 
 const todonewDiv = document.createElement("div");
 todonewDiv.classList.add("todo-app-item-list");
@@ -30,7 +34,7 @@ todonewDiv.appendChild(todoNewAction)
 todoList.appendChild(todonewDiv)
 
 todoInput.value = "";
-
+    }
 });
 
 
@@ -63,7 +67,7 @@ todoList.addEventListener("click", function todoAction(event){
     }
 });
 
-document.addEventListener("DOMcontentLoaded", function getTodoLocal(todoItem){
+document.addEventListener("DOMContentLoaded", function getTodoLocal(todoItem){
     let todo;
      if (localStorage.getItem('todo') === null){
          todo = [];
